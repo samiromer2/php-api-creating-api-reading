@@ -1,5 +1,8 @@
-<?php include('config.php');
+<?php 
+//conneting to needed database
+include('config.php');
 
+//exmaple open data api
 $api_url = 'https://api.open.undp.org/api/project_list/?year=2021&operating_unit=SDN';
 
 $json_data = file_get_contents($api_url);
